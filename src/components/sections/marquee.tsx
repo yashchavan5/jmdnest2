@@ -11,9 +11,9 @@ export function MarqueeSection() {
     <section className="py-8 bg-white relative z-20 rounded-t-[3rem] mt-[-4rem] shadow-[0_-20px_40px_rgba(0,0,0,0.05)]">
       <div className="container mx-auto px-6 max-w-4xl text-center">
         <p className="text-[15px] font-medium text-[#6b7280] mb-8">
-          Trusted by 500+ PG owners & managers across India
+          Trusted by 24+ PG owners & managers across India
         </p>
-        
+
         <div className="relative flex overflow-x-hidden w-full [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
           <motion.div
             animate={{ x: ["0%", "-50%"] }}

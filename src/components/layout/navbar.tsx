@@ -37,15 +37,15 @@ export function Navbar() {
         >
           <motion.div layout transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }} className="flex items-center gap-2 pl-2 z-50">
             <img src="/logo.png" alt="JMDNest" className="h-7 md:h-8 w-auto" />
-            <span className="font-bold text-lg md:text-xl text-[#111827] tracking-tight">JMDNest</span>
+            <span className={`font-bold text-lg md:text-xl tracking-tight ${isScrolled || isOpen ? "text-[#111827]" : "text-white"}`}>JMDNest</span>
           </motion.div>
           
           <motion.nav layout transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }} className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-[15px] font-medium text-[#111827] hover:opacity-70 transition-opacity">Features</a>
-            <a href="#benefits" className="text-[15px] font-medium text-[#111827] hover:opacity-70 transition-opacity">Benefits</a>
-            <a href="#pricing" className="text-[15px] font-medium text-[#111827] hover:opacity-70 transition-opacity">Pricing</a>
-            <a href="/blog" className="text-[15px] font-medium text-[#111827] hover:opacity-70 transition-opacity">Blog</a>
-            <a href="/contact-us" className="text-[15px] font-medium text-[#111827] hover:opacity-70 transition-opacity">Contact Us</a>
+            <a href="#features" className={`text-[15px] font-medium hover:opacity-70 transition-opacity ${isScrolled ? "text-[#111827]" : "text-white"}`}>Features</a>
+            <a href="#benefits" className={`text-[15px] font-medium hover:opacity-70 transition-opacity ${isScrolled ? "text-[#111827]" : "text-white"}`}>Benefits</a>
+            <a href="#pricing" className={`text-[15px] font-medium hover:opacity-70 transition-opacity ${isScrolled ? "text-[#111827]" : "text-white"}`}>Pricing</a>
+            <a href="/blog" className={`text-[15px] font-medium hover:opacity-70 transition-opacity ${isScrolled ? "text-[#111827]" : "text-white"}`}>Blog</a>
+            <a href="/contact-us" className={`text-[15px] font-medium hover:opacity-70 transition-opacity ${isScrolled ? "text-[#111827]" : "text-white"}`}>Contact Us</a>
           </motion.nav>
 
           <motion.div layout transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }} className="hidden md:flex items-center">
@@ -58,7 +58,7 @@ export function Navbar() {
           <motion.button 
             layout 
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden flex items-center justify-center p-2 z-50 text-[#111827]"
+            className={`md:hidden flex items-center justify-center p-2 z-50 ${isScrolled || isOpen ? "text-[#111827]" : "text-white"}`}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </motion.button>
