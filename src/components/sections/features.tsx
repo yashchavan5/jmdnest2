@@ -54,8 +54,8 @@ export function FeaturesSection() {
         
         <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-24 relative">
           
-          {/* Left Sticky Part - Pinned during scroll */}
-          <div className="lg:w-[45%] sticky top-[80px] lg:top-0 h-auto lg:h-screen flex flex-col justify-center pt-6 pb-6 lg:pt-0 lg:pb-0 z-30 bg-[#f9f9f9]/90 backdrop-blur-xl lg:bg-transparent lg:backdrop-blur-none border-b border-gray-200/50 lg:border-none -mx-6 px-6 lg:mx-0 lg:px-0 transition-all shadow-sm lg:shadow-none">
+          {/* Left Sticky Part - Pinned during scroll only on desktop */}
+          <div className="lg:w-[45%] lg:sticky lg:top-0 h-auto lg:h-screen flex flex-col justify-center pt-6 pb-6 lg:pt-0 lg:pb-0 z-30 bg-[#f9f9f9]/90 backdrop-blur-xl lg:bg-transparent lg:backdrop-blur-none border-b border-gray-200/50 lg:border-none -mx-6 px-6 lg:mx-0 lg:px-0 transition-all shadow-sm lg:shadow-none">
             <div className="inline-flex items-center relative mb-4 lg:mb-8">
               <div className="absolute -left-2 -bottom-1 w-2 h-2 border-l-2 border-b-2 border-[#10b981]"></div>
               <div className="absolute -right-2 -top-1 w-2 h-2 border-r-2 border-t-2 border-[#10b981]"></div>
@@ -63,7 +63,7 @@ export function FeaturesSection() {
             </div>
             
             <h2 className="text-3xl lg:text-[4rem] font-bold tracking-tight mb-0 lg:mb-2 leading-[1.1] text-[#111827]">
-              Your Flow
+              Your Workflow
             </h2>
             <h2 className="text-3xl lg:text-[4rem] font-bold tracking-tight mb-4 lg:mb-8 leading-[1.1] text-[#6b7280]">
               Your Integrations

@@ -64,8 +64,8 @@ export function ShowcaseSection() {
           </AnimatePresence>
 
           {/* Floating blur toggle over the image */}
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 pointer-events-auto">
-            <div className="bg-black/40 backdrop-blur-xl p-1.5 rounded-full inline-flex relative shadow-lg border border-white/20">
+          <div className="absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 pointer-events-auto w-[90%] max-w-[320px] sm:max-w-max">
+            <div className="bg-black/40 backdrop-blur-xl p-1.5 rounded-full flex relative shadow-lg border border-white/20 w-full">
               <motion.div 
                 className="absolute top-1.5 bottom-1.5 w-[calc(50%-6px)] bg-black rounded-full shadow-sm"
                 animate={{ left: device === "mobile" ? "6px" : "calc(50%)" }}
@@ -73,13 +73,13 @@ export function ShowcaseSection() {
               />
               <button
                 onClick={() => setDevice("mobile")}
-                className={`relative z-10 px-8 py-2.5 rounded-full text-[14px] font-bold transition-colors ${device === "mobile" ? "text-white" : "text-white/70 hover:text-white"}`}
+                className={`relative z-10 flex-1 px-4 sm:px-8 py-2 sm:py-2.5 rounded-full text-[13px] sm:text-[14px] font-bold transition-colors whitespace-nowrap ${device === "mobile" ? "text-white" : "text-white/70 hover:text-white"}`}
               >
                 Mobile App
               </button>
               <button
                 onClick={() => setDevice("desktop")}
-                className={`relative z-10 px-8 py-2.5 rounded-full text-[14px] font-bold transition-colors ${device === "desktop" ? "text-white" : "text-white/70 hover:text-white"}`}
+                className={`relative z-10 flex-1 px-4 sm:px-8 py-2 sm:py-2.5 rounded-full text-[13px] sm:text-[14px] font-bold transition-colors whitespace-nowrap ${device === "desktop" ? "text-white" : "text-white/70 hover:text-white"}`}
               >
                 Web App
               </button>

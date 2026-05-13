@@ -17,22 +17,22 @@ export function PricingSection() {
         </div>
 
         {/* Toggle */}
-        <div className="flex justify-center mb-16">
-          <div className="bg-[#e5e0d8] p-1 rounded-full inline-flex relative shadow-sm">
+        <div className="flex justify-center mb-10 md:mb-16">
+          <div className="bg-[#e5e0d8] p-1.5 rounded-full flex relative shadow-sm w-[90%] max-w-[300px] sm:max-w-[340px]">
             <motion.div
-              className="absolute top-1 bottom-1 w-[calc(50%-4px)] bg-white rounded-full shadow-sm"
-              animate={{ left: billing === "Annually" ? "4px" : "calc(50%)" }}
+              className="absolute top-1.5 bottom-1.5 w-[calc(50%-6px)] bg-white rounded-full shadow-sm"
+              animate={{ left: billing === "Annually" ? "6px" : "calc(50%)" }}
               transition={{ type: "spring", stiffness: 400, damping: 30 }}
             />
             <button
               onClick={() => setBilling("Annually")}
-              className={`relative z-10 px-6 py-2 rounded-full text-[14px] font-bold transition-colors ${billing === "Annually" ? "text-[#111827]" : "text-[#6b7280]"}`}
+              className={`relative z-10 flex-1 py-2.5 rounded-full text-[13px] sm:text-[14px] font-bold transition-colors whitespace-nowrap ${billing === "Annually" ? "text-[#111827]" : "text-[#6b7280] hover:text-[#4b5563]"}`}
             >
-              Annual(Save)
+              Annual (Save)
             </button>
             <button
               onClick={() => setBilling("Monthly")}
-              className={`relative z-10 px-6 py-2 rounded-full text-[14px] font-bold transition-colors ${billing === "Monthly" ? "text-[#111827]" : "text-[#6b7280]"}`}
+              className={`relative z-10 flex-1 py-2.5 rounded-full text-[13px] sm:text-[14px] font-bold transition-colors whitespace-nowrap ${billing === "Monthly" ? "text-[#111827]" : "text-[#6b7280] hover:text-[#4b5563]"}`}
             >
               Monthly
             </button>
