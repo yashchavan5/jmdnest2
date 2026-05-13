@@ -76,7 +76,7 @@ export function FeaturesSection() {
 
           {/* Right Scrolling Part - Scrolls naturally while left is pinned */}
           <div className="lg:w-[55%] relative pt-16 pb-8 lg:pt-[25vh] lg:pb-[10vh]">
-            <div className="flex flex-col gap-32 relative z-10">
+            <div className="flex flex-col gap-16 md:gap-20 relative z-10">
               {/* The vertical timeline line */}
               <div className="absolute left-6 md:left-[2.5rem] top-5 w-[4px] bg-gray-200 z-[-1] ml-[-2px]" style={{ height: 'calc(100% - 140px)' }}>
                  <motion.div 
