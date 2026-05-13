@@ -55,8 +55,8 @@ export function FeaturesSection() {
         <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-24 relative">
           
           {/* Left Sticky Part - Pinned during scroll only on desktop */}
-          <div className="lg:w-[45%] lg:sticky lg:top-0 h-auto lg:h-screen flex flex-col justify-center pt-6 pb-6 lg:pt-0 lg:pb-0 z-30 bg-[#f9f9f9]/90 backdrop-blur-xl lg:bg-transparent lg:backdrop-blur-none border-b border-gray-200/50 lg:border-none -mx-6 px-6 lg:mx-0 lg:px-0 transition-all shadow-sm lg:shadow-none">
-            <div className="inline-flex items-center relative mb-4 lg:mb-8">
+          <div className="w-full lg:w-[45%] lg:sticky lg:top-0 h-auto lg:h-screen flex flex-col items-center lg:items-start justify-center text-center lg:text-left pt-6 pb-12 lg:pt-0 lg:pb-0 z-30 bg-transparent transition-all">
+            <div className="inline-flex items-center justify-center relative mb-4 lg:mb-8">
               <div className="absolute -left-2 -bottom-1 w-2 h-2 border-l-2 border-b-2 border-[#10b981]"></div>
               <div className="absolute -right-2 -top-1 w-2 h-2 border-r-2 border-t-2 border-[#10b981]"></div>
               <span className="text-[#111827] text-[13px] lg:text-[15px] font-medium px-2">Our process</span>
@@ -69,7 +69,7 @@ export function FeaturesSection() {
               Your Integrations
             </h2>
             
-            <p className="text-[15px] lg:text-lg text-[#6b7280] leading-relaxed font-light max-w-sm hidden sm:block">
+            <p className="text-[15px] lg:text-lg text-[#6b7280] leading-relaxed font-light max-w-sm hidden sm:block mx-auto lg:mx-0">
               Design Flow for your needs and JMDNest does the rest for you automatically.
             </p>
           </div>
