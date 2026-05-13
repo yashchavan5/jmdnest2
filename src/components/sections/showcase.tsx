@@ -45,8 +45,8 @@ export function ShowcaseSection() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 1.04 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
-                src="/web-original.jpeg"
-                alt="Web App"
+                src="/jmdnest-web-mockup.png"
+                alt="JMDNest Web App"
                 className="absolute inset-0 w-full h-full object-cover object-top"
               />
             ) : (
@@ -56,8 +56,8 @@ export function ShowcaseSection() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 1.04 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
-                src="/mobile-original.jpeg"
-                alt="Mobile App"
+                src="/jmdnest-mobile-mockup.png"
+                alt="JMDNest Mobile App"
                 className="absolute inset-0 w-full h-full object-cover object-top"
               />
             )}

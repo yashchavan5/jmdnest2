@@ -1,94 +1,94 @@
 "use client"
-import Link from "next/link"
-import { motion, useScroll, useTransform } from "framer-motion"
+import { motion, useScroll, useTransform, useSpring } from "framer-motion"
 import { useRef } from "react"
 
 const features = [
   {
     id: "01",
     title: "Property Management",
-    heading: "Keep every property running smoothly",
     description: "Manage tenants, rooms, and payments - all in one place. With smart occupancy tracking, rent reminders, and real-time reports, you stay organized and tenants stay happy.",
-    image: "/project-management-v2.jpg",
-    gradient: "from-[#A6C4E5] to-[#EBE3D5]"
   },
   {
     id: "02",
-    title: "Tenant Management",
-    heading: "Organize your daily operations",
-    description: "Keep track of every tenant with our intuitive management dashboard. Filter by room, monitor payment status, and ensure your staff is always aligned on what matters most.",
-    image: "/feature-2.jpeg",
-    gradient: "from-[#e3dcd1] to-[#f4efe9]"
+    title: "Tenant Onboarding",
+    description: "Digitize your tenant onboarding process. Collect KYC documents, digital signatures, and move-in checklists without printing a single sheet of paper.",
   },
   {
     id: "03",
     title: "Automated Billing",
-    heading: "Never miss a payment again",
     description: "Generate rent invoices automatically, track partial payments, and send WhatsApp/SMS reminders to tenants seamlessly.",
-    image: "/project-management-v2.jpg",
-    gradient: "from-[#d5e4f2] to-[#f0eadd]"
+  },
+  {
+    id: "04",
+    title: "Maintenance Requests",
+    description: "Allow tenants to raise maintenance tickets directly from the app. Assign tasks to staff, track progress, and notify tenants upon resolution.",
+  },
+  {
+    id: "05",
+    title: "Expense Tracking",
+    description: "Record daily expenses, track utility bills, and monitor staff salaries. Generate comprehensive P&L statements with a single click.",
+  },
+  {
+    id: "06",
+    title: "Real-time Analytics",
+    description: "Access a bird's-eye view of your entire PG business. Monitor occupancy rates, revenue trends, and tenant churn to maximize profitability.",
   }
 ]
 
 export function FeaturesSection() {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end end"]
+  });
+
+  const lineHeight = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+
   return (
-    <section id="features" className="py-24 bg-[#f9f8f6] relative">
+    <section id="features" className="bg-[#f9f9f9] relative" ref={containerRef}>
       <div className="container mx-auto px-6 max-w-7xl">
         
-        {/* Mobile View: Standard stacked layout */}
-        <div className="lg:hidden space-y-24">
-          {features.map((feature) => (
-            <div key={feature.id} className="flex flex-col gap-8">
-              <div className={`bg-gradient-to-b ${feature.gradient} rounded-[2.5rem] p-8 sm:p-12 flex items-center justify-center relative overflow-hidden`}>
-                 <img src={feature.image} alt={feature.title} className="w-full h-auto object-contain rounded-xl shadow-2xl" />
-              </div>
-              <div>
-                <h3 className="text-[#8c8273] font-bold tracking-widest uppercase text-xs mb-4">{feature.id} • {feature.title}</h3>
-                <h2 className="text-3xl sm:text-4xl font-bold text-[#111827] tracking-tight mb-6 leading-[1.1]">
-                  {feature.heading}
-                </h2>
-                <p className="text-[17px] text-[#4b5563] mb-8 leading-relaxed">
-                  {feature.description}
-                </p>
-                <Link href="/contact-us" className="inline-block bg-[#1a1818] hover:bg-black text-white text-[15px] font-bold px-8 py-3.5 rounded-full transition-colors">
-                  Explore feature
-                </Link>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Desktop View: Sticky Scrolling */}
-        <div className="hidden lg:flex items-start gap-16 relative">
+        <div className="flex flex-col lg:flex-row items-start gap-16 lg:gap-24 relative">
           
-          {/* Left Side: Sticky Content */}
-          <div className="w-[45%] sticky top-32 h-[calc(100vh-8rem)] flex flex-col justify-center pb-20">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="text-4xl md:text-[3.5rem] font-bold text-[#111827] tracking-tight mb-6 leading-[1.1]">
-                Your Workflow,<br />Simplified
-              </h2>
-              <p className="text-xl text-[#4b5563] mb-10 leading-relaxed max-w-md">
-                Design the flow for your needs and let JmdNest do the rest for you automatically. Experience seamless management.
-              </p>
-              <Link 
-                href="/contact-us" 
-                className="inline-block self-start bg-[#1a1818] hover:bg-black text-white text-[15px] font-bold px-8 py-3.5 rounded-full transition-colors"
-              >
-                Get Started Now
-              </Link>
-            </motion.div>
+          {/* Left Sticky Part - Pinned during scroll */}
+          <div className="lg:w-[45%] lg:sticky lg:top-0 lg:h-screen flex flex-col justify-center pt-24 lg:pt-0 pb-12 lg:pb-0 z-10">
+            <div className="inline-flex items-center relative mb-8">
+              <div className="absolute -left-2 -bottom-1 w-2 h-2 border-l-2 border-b-2 border-[#10b981]"></div>
+              <div className="absolute -right-2 -top-1 w-2 h-2 border-r-2 border-t-2 border-[#10b981]"></div>
+              <span className="text-[#111827] text-[15px] font-medium px-2">Our process</span>
+            </div>
+            
+            <h2 className="text-5xl md:text-[4rem] font-bold tracking-tight mb-2 leading-[1.1] text-[#111827]">
+              Your Flow
+            </h2>
+            <h2 className="text-5xl md:text-[4rem] font-bold tracking-tight mb-8 leading-[1.1] text-[#6b7280]">
+              Your Integrations
+            </h2>
+            
+            <p className="text-[17px] md:text-lg text-[#6b7280] leading-relaxed font-light max-w-sm">
+              Design Flow for your needs and JMDNest does the rest for you automatically.
+            </p>
           </div>
 
-          {/* Right Side: Scrolling Cards */}
-          <div className="w-[55%] flex flex-col gap-[30vh] pb-[20vh] pt-[10vh]">
-            {features.map((feature, index) => (
-              <FeatureCard key={feature.id} feature={feature} index={index} />
-            ))}
+          {/* Right Scrolling Part - Scrolls naturally while left is pinned */}
+          <div className="lg:w-[55%] relative lg:py-[25vh]">
+            {/* The vertical timeline line */}
+            <div className="absolute left-6 md:left-[2.5rem] top-0 lg:top-[25vh] bottom-0 lg:bottom-[25vh] w-[1px] bg-gray-200 z-0">
+               <motion.div 
+                 className="w-full bg-[#10b981] origin-top"
+                 style={{ scaleY: lineHeight, height: "100%" }}
+               />
+            </div>
+
+            <div className="flex flex-col gap-32 relative z-10">
+              {features.map((feature, index) => (
+                <TimelineFeature key={feature.id} feature={feature} index={index} />
+              ))}
+            </div>
           </div>
 
         </div>
@@ -98,43 +98,41 @@ export function FeaturesSection() {
   )
 }
 
-function FeatureCard({ feature, index }: { feature: any, index: number }) {
+function TimelineFeature({ feature, index }: { feature: any, index: number }) {
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start end", "end start"]
+    offset: ["start 80%", "center center"]
   })
 
-  // Smooth scale and opacity effect as the card scrolls into view
-  const scale = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0.85, 1, 1, 0.85])
-  const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0.2, 1, 1, 0.2])
+  const opacity = useTransform(scrollYProgress, [0, 1], [0.2, 1]);
+  const y = useTransform(scrollYProgress, [0, 1], [50, 0]);
 
   return (
-    <motion.div 
-      ref={ref}
-      style={{ scale, opacity }}
-      className="flex flex-col gap-6"
-    >
-      <div className={`bg-gradient-to-b ${feature.gradient} rounded-[2.5rem] p-12 flex items-center justify-center relative overflow-hidden transition-all duration-500 hover:shadow-xl`}>
-        <img 
-          src={feature.image} 
-          alt={feature.title} 
-          className="w-full h-auto object-contain rounded-2xl shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] border border-white/20"
-        />
+    <div ref={ref} className="relative pl-24 md:pl-32 w-full group">
+      {/* Node indicator */}
+      <div className="absolute left-6 md:left-[2.5rem] top-0 w-11 h-11 rounded-full bg-[#f9f9f9] border border-gray-200 z-10 flex items-center justify-center -translate-x-1/2 transition-colors duration-300">
+        <span className="text-[13px] font-medium text-[#6b7280] group-hover:text-[#111827] transition-colors">{feature.id}</span>
       </div>
-      <div className="bg-white p-8 rounded-[2rem] shadow-sm border border-gray-100">
-        <div className="flex items-center gap-3 mb-4">
-           <span className="text-xl font-black text-[#111827]">{feature.id}</span>
-           <div className="h-4 w-px bg-gray-300"></div>
-           <h3 className="text-[#8c8273] font-bold tracking-widest uppercase text-xs">{feature.title}</h3>
+      
+      {/* Red dot indicator */}
+      <div className="absolute left-1 md:left-[0.5rem] top-[20px] w-[3px] h-[3px] rounded-full bg-red-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      
+      {/* Content wrapper */}
+      <motion.div 
+        style={{ opacity, y }}
+        className="w-full pt-1"
+      >
+        <div className="relative">
+          <h2 className="text-2xl md:text-[1.75rem] font-bold text-[#111827] tracking-tight mb-4 flex items-start justify-between">
+            {feature.title}
+            <div className="w-2 h-2 border-r-2 border-t-2 border-[#10b981] mt-2 opacity-100"></div>
+          </h2>
+          <p className="text-[16px] md:text-[1.125rem] text-[#6b7280] leading-[1.6] font-light max-w-xl">
+            {feature.description}
+          </p>
         </div>
-        <h2 className="text-2xl font-bold text-[#111827] tracking-tight mb-4 leading-[1.2]">
-          {feature.heading}
-        </h2>
-        <p className="text-[16px] text-[#4b5563] leading-relaxed">
-          {feature.description}
-        </p>
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   )
 }
