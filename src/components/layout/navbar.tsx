@@ -49,7 +49,7 @@ export function Navbar() {
           </motion.nav>
 
           <motion.div layout transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }} className="hidden md:flex items-center">
-            <Link href="/contact-us" className="bg-[#1a1818] hover:bg-black text-white text-[15px] font-bold px-6 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            <Link href="https://wa.me/919209552809" target="_blank" rel="noopener noreferrer" className="bg-[#1a1818] hover:bg-black text-white text-[15px] font-bold px-6 py-2.5 rounded-full transition-colors whitespace-nowrap">
               Get a Free Demo
             </Link>
           </motion.div>
@@ -85,7 +85,8 @@ export function Navbar() {
 
             <div className="flex flex-col gap-4 w-full max-w-[280px]">
               <Link 
-                href="/contact-us" 
+                href="https://wa.me/919209552809" 
+                target="_blank" rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
                 className="bg-[#1a1818] text-white text-[17px] font-bold px-8 py-4 rounded-full text-center w-full shadow-lg"
               >

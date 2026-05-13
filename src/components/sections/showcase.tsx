@@ -14,7 +14,7 @@ export function ShowcaseSection() {
   }, [])
 
   return (
-    <section className="py-14 bg-[#f9f8f6] overflow-hidden">
+    <section className="py-10 md:py-16 bg-[#f9f8f6] overflow-hidden">
       <div className="container mx-auto px-6 text-center flex flex-col items-center">
         
         <motion.div 

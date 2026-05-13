@@ -14,7 +14,9 @@ export function Footer() {
             Download JMDNest for free. No credit card required.
           </p>
           <Link
-            href="/contact-us"
+            href="https://wa.me/919209552809"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-[#1a1818] hover:bg-black text-white text-[15px] font-bold px-8 py-3.5 rounded-full transition-colors"
           >
             Book JmdNest PG

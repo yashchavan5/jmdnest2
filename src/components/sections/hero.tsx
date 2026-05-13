@@ -17,8 +17,8 @@ export function HeroSection() {
         <div className="absolute inset-0 bg-black/60" />
       </div>
 
-      <div className="container relative z-20 px-6 md:px-12 lg:px-24 py-32 flex justify-center">
-        <div className="max-w-4xl flex flex-col items-center text-center">
+      <div className="container mx-auto relative z-20 px-6 md:px-12 lg:px-24 pt-32 pb-24 md:pb-32 flex justify-center w-full">
+        <div className="max-w-4xl w-full flex flex-col items-center text-center mx-auto">
           {/* JMD Nest Logo Text */}
           <motion.div
             initial={{ opacity: 0, y: -20 }}
@@ -57,8 +57,10 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
           >
             <Link
-              href="/contact-us"
-              className="inline-block bg-[#e67e22] hover:bg-[#d35400] text-white text-base md:text-lg font-bold px-10 py-4 md:py-5 rounded-full transition-all duration-300 shadow-xl hover:shadow-[#e67e22]/30 hover:-translate-y-1 active:translate-y-0"
+              href="https://wa.me/919209552809"
+              className="inline-block bg-[#e67e22] hover:bg-[#d35400] text-white text-[15px] md:text-base font-bold px-8 py-3 md:px-10 md:py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-[#e67e22]/30 hover:-translate-y-1 active:translate-y-0"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Get a Free Demo
             </Link>

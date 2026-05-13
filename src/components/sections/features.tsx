@@ -49,42 +49,41 @@ export function FeaturesSection() {
   });
 
   return (
-    <section id="features" className="bg-[#f9f9f9] relative" ref={containerRef}>
+    <section id="features" className="bg-[#f9f9f9] relative pt-12 lg:pt-20" ref={containerRef}>
       <div className="container mx-auto px-6 max-w-7xl">
         
-        <div className="flex flex-col lg:flex-row items-start gap-16 lg:gap-24 relative">
+        <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-24 relative">
           
           {/* Left Sticky Part - Pinned during scroll */}
-          <div className="lg:w-[45%] sticky top-0 lg:top-0 h-auto lg:h-screen flex flex-col justify-center pt-6 pb-6 lg:pt-0 lg:pb-0 z-30 bg-[#f9f9f9]/90 backdrop-blur-xl lg:bg-transparent lg:backdrop-blur-none border-b border-gray-200/50 lg:border-none -mx-6 px-6 lg:mx-0 lg:px-0 transition-all shadow-sm lg:shadow-none">
+          <div className="lg:w-[45%] sticky top-[80px] lg:top-0 h-auto lg:h-screen flex flex-col justify-center pt-6 pb-6 lg:pt-0 lg:pb-0 z-30 bg-[#f9f9f9]/90 backdrop-blur-xl lg:bg-transparent lg:backdrop-blur-none border-b border-gray-200/50 lg:border-none -mx-6 px-6 lg:mx-0 lg:px-0 transition-all shadow-sm lg:shadow-none">
             <div className="inline-flex items-center relative mb-4 lg:mb-8">
               <div className="absolute -left-2 -bottom-1 w-2 h-2 border-l-2 border-b-2 border-[#10b981]"></div>
               <div className="absolute -right-2 -top-1 w-2 h-2 border-r-2 border-t-2 border-[#10b981]"></div>
               <span className="text-[#111827] text-[13px] lg:text-[15px] font-medium px-2">Our process</span>
             </div>
             
-            <h2 className="text-3xl md:text-[4rem] font-bold tracking-tight mb-0 lg:mb-2 leading-[1.1] text-[#111827]">
+            <h2 className="text-3xl lg:text-[4rem] font-bold tracking-tight mb-0 lg:mb-2 leading-[1.1] text-[#111827]">
               Your Flow
             </h2>
-            <h2 className="text-3xl md:text-[4rem] font-bold tracking-tight mb-4 lg:mb-8 leading-[1.1] text-[#6b7280]">
+            <h2 className="text-3xl lg:text-[4rem] font-bold tracking-tight mb-4 lg:mb-8 leading-[1.1] text-[#6b7280]">
               Your Integrations
             </h2>
             
-            <p className="text-[15px] md:text-lg text-[#6b7280] leading-relaxed font-light max-w-sm hidden sm:block">
+            <p className="text-[15px] lg:text-lg text-[#6b7280] leading-relaxed font-light max-w-sm hidden sm:block">
               Design Flow for your needs and JMDNest does the rest for you automatically.
             </p>
           </div>
 
           {/* Right Scrolling Part - Scrolls naturally while left is pinned */}
-          <div className="lg:w-[55%] relative py-16 lg:py-[25vh]">
-            {/* The vertical timeline line */}
-            <div className="absolute left-6 md:left-[2.5rem] top-16 lg:top-[25vh] bottom-16 lg:bottom-[25vh] w-[1px] bg-gray-200 z-0">
-               <motion.div 
-                 className="w-full bg-[#10b981] origin-top"
-                 style={{ scaleY: lineHeight, height: "100%" }}
-               />
-            </div>
-
+          <div className="lg:w-[55%] relative pt-16 pb-8 lg:pt-[25vh] lg:pb-[10vh]">
             <div className="flex flex-col gap-32 relative z-10">
+              {/* The vertical timeline line */}
+              <div className="absolute left-6 md:left-[2.5rem] top-5 w-[4px] bg-gray-200 z-[-1] ml-[-2px]" style={{ height: 'calc(100% - 140px)' }}>
+                 <motion.div 
+                   className="w-full bg-[#111827] origin-top rounded-full"
+                   style={{ scaleY: lineHeight, height: "100%" }}
+                 />
+              </div>
               {features.map((feature, index) => (
                 <TimelineFeature key={feature.id} feature={feature} index={index} />
               ))}
@@ -124,11 +123,11 @@ function TimelineFeature({ feature, index }: { feature: any, index: number }) {
         className="w-full pt-1"
       >
         <div className="relative">
-          <h2 className="text-2xl md:text-[1.75rem] font-bold text-[#111827] tracking-tight mb-4 flex items-start justify-between">
+          <h2 className="text-2xl lg:text-[1.75rem] font-bold text-[#111827] tracking-tight mb-4 flex items-start justify-between">
             {feature.title}
             <div className="w-2 h-2 border-r-2 border-t-2 border-[#10b981] mt-2 opacity-100"></div>
           </h2>
-          <p className="text-[16px] md:text-[1.125rem] text-[#6b7280] leading-[1.6] font-light max-w-xl">
+          <p className="text-[16px] lg:text-[1.125rem] text-[#6b7280] leading-[1.6] font-light max-w-xl">
             {feature.description}
           </p>
         </div>

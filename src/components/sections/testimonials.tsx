@@ -31,7 +31,7 @@ const testimonials = [
 
 export function TestimonialsSection() {
   return (
-    <section className="py-16 bg-[#f4f6f8] relative overflow-hidden">
+    <section className="py-10 md:py-16 bg-[#f4f6f8] relative overflow-hidden">
       <div className="container mx-auto px-6 mb-14">
         <div className="text-center max-w-4xl mx-auto flex flex-col items-center">
           <div className="flex flex-col items-center">
