@@ -61,7 +61,7 @@ export function TestimonialsSection() {
           {[...testimonials, ...testimonials].map((t, i) => (
             <div
               key={i}
-              className="bg-white p-10 rounded-[2rem] w-[400px] flex flex-col justify-between shrink-0 shadow-sm border border-[#e5e7eb]"
+              className="bg-white p-8 md:p-10 rounded-[2rem] w-[85vw] md:w-[400px] flex flex-col justify-between shrink-0 shadow-sm border border-[#e5e7eb]"
             >
               <p className="text-[#374151] text-[15px] leading-relaxed mb-10">
                 "{t.quote}"

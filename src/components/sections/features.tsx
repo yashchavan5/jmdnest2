@@ -55,29 +55,29 @@ export function FeaturesSection() {
         <div className="flex flex-col lg:flex-row items-start gap-16 lg:gap-24 relative">
           
           {/* Left Sticky Part - Pinned during scroll */}
-          <div className="lg:w-[45%] lg:sticky lg:top-0 lg:h-screen flex flex-col justify-center pt-24 lg:pt-0 pb-12 lg:pb-0 z-10">
-            <div className="inline-flex items-center relative mb-8">
+          <div className="lg:w-[45%] sticky top-0 lg:top-0 h-auto lg:h-screen flex flex-col justify-center pt-6 pb-6 lg:pt-0 lg:pb-0 z-30 bg-[#f9f9f9]/90 backdrop-blur-xl lg:bg-transparent lg:backdrop-blur-none border-b border-gray-200/50 lg:border-none -mx-6 px-6 lg:mx-0 lg:px-0 transition-all shadow-sm lg:shadow-none">
+            <div className="inline-flex items-center relative mb-4 lg:mb-8">
               <div className="absolute -left-2 -bottom-1 w-2 h-2 border-l-2 border-b-2 border-[#10b981]"></div>
               <div className="absolute -right-2 -top-1 w-2 h-2 border-r-2 border-t-2 border-[#10b981]"></div>
-              <span className="text-[#111827] text-[15px] font-medium px-2">Our process</span>
+              <span className="text-[#111827] text-[13px] lg:text-[15px] font-medium px-2">Our process</span>
             </div>
             
-            <h2 className="text-5xl md:text-[4rem] font-bold tracking-tight mb-2 leading-[1.1] text-[#111827]">
+            <h2 className="text-3xl md:text-[4rem] font-bold tracking-tight mb-0 lg:mb-2 leading-[1.1] text-[#111827]">
               Your Flow
             </h2>
-            <h2 className="text-5xl md:text-[4rem] font-bold tracking-tight mb-8 leading-[1.1] text-[#6b7280]">
+            <h2 className="text-3xl md:text-[4rem] font-bold tracking-tight mb-4 lg:mb-8 leading-[1.1] text-[#6b7280]">
               Your Integrations
             </h2>
             
-            <p className="text-[17px] md:text-lg text-[#6b7280] leading-relaxed font-light max-w-sm">
+            <p className="text-[15px] md:text-lg text-[#6b7280] leading-relaxed font-light max-w-sm hidden sm:block">
               Design Flow for your needs and JMDNest does the rest for you automatically.
             </p>
           </div>
 
           {/* Right Scrolling Part - Scrolls naturally while left is pinned */}
-          <div className="lg:w-[55%] relative lg:py-[25vh]">
+          <div className="lg:w-[55%] relative py-16 lg:py-[25vh]">
             {/* The vertical timeline line */}
-            <div className="absolute left-6 md:left-[2.5rem] top-0 lg:top-[25vh] bottom-0 lg:bottom-[25vh] w-[1px] bg-gray-200 z-0">
+            <div className="absolute left-6 md:left-[2.5rem] top-16 lg:top-[25vh] bottom-16 lg:bottom-[25vh] w-[1px] bg-gray-200 z-0">
                <motion.div 
                  className="w-full bg-[#10b981] origin-top"
                  style={{ scaleY: lineHeight, height: "100%" }}
@@ -102,7 +102,7 @@ function TimelineFeature({ feature, index }: { feature: any, index: number }) {
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start 80%", "center center"]
+    offset: ["start 90%", "start 40%"]
   })
 
   const opacity = useTransform(scrollYProgress, [0, 1], [0.2, 1]);
