@@ -19,14 +19,14 @@ export function HeroSection() {
 
       <div className="container mx-auto relative z-20 px-6 md:px-12 lg:px-24 pt-32 pb-24 md:pb-32 flex justify-center w-full">
         <div className="max-w-4xl w-full flex flex-col items-center text-center mx-auto">
-          {/* JMD Nest Logo Text */}
+          {/* JMD Nest Logo */}
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="flex items-center gap-2 mb-8"
+            className="mb-8 flex justify-center w-full"
           >
-
+            <img src="/jmdnest-logo-final.png" alt="JmdNest Logo" className="h-20 md:h-24 w-auto object-contain drop-shadow-[0_4px_12px_rgba(255,255,255,0.4)]" />
           </motion.div>
 
           {/* Main Heading */}

@@ -43,7 +43,7 @@ export function TestimonialsSection() {
             </h2>
           </div>
           <div className="flex flex-col items-center">
-            <img src="/jmdnest-logo.png" alt="JMDNest Logo" className="w-16 h-16 rounded-full mb-4 shadow-md object-contain border-2 border-white bg-white" />
+            <img src="/jmdnest-logo-final.png" alt="JMDNest Logo" className="w-20 h-20 mb-4 object-contain drop-shadow-[0_4px_12px_rgba(0,0,0,0.1)]" />
             <h4 className="font-bold text-[#111827] text-sm">JMDNest</h4>
             <p className="text-xs text-[#6b7280]">JMDNest Teams, Pune Maharashtra </p>
           </div>

@@ -106,9 +106,9 @@ export function IntegrationsSection() {
               whileInView={{ scale: 1, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.4, type: "spring", stiffness: 200, damping: 20 }}
-              className="bg-white w-24 h-24 md:w-[136px] md:h-[136px] rounded-[1.5rem] md:rounded-[2rem] flex items-center justify-center mb-6 md:mb-10 shadow-[0_0_30px_rgba(255,255,255,0.2)] relative z-10"
+              className="w-32 h-32 md:w-[160px] md:h-[160px] flex items-center justify-center mb-6 md:mb-10 relative z-10 mx-auto"
             >
-               <img src="/logos/logo-v2.png" alt="JMDNest Logo" className="w-[60%] h-[60%] object-contain drop-shadow-sm" />
+               <img src="/jmdnest-logo-final.png" alt="JMDNest Logo" className="w-[85%] h-[85%] object-contain drop-shadow-[0_0_20px_rgba(255,255,255,0.3)]" />
             </motion.div>
             
             <motion.h3 
