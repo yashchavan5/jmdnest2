@@ -20,7 +20,12 @@ export function FloatingContact() {
         className="w-12 h-12 md:w-14 md:h-14 bg-white hover:bg-gray-50 rounded-full border border-gray-200 flex items-center justify-center shadow-lg transition-transform hover:-translate-y-1"
         aria-label="Send an email"
       >
-        <img src="/gmail-logo.png" alt="Gmail" className="w-7 h-7 md:w-8 md:h-8 object-contain" />
+        <svg viewBox="0 0 24 24" className="w-6 h-6 md:w-7 md:h-7" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.5 5.25L12 13.5l10.5-8.25v13.5a1.5 1.5 0 0 1-1.5 1.5H3a1.5 1.5 0 0 1-1.5-1.5V5.25z" fill="#4285F4"/>
+          <path d="M1.5 5.25A1.5 1.5 0 0 1 3 3.75h18a1.5 1.5 0 0 1 1.5 1.5v2.25L12 15.75 1.5 7.5V5.25z" fill="#EA4335"/>
+          <path d="M1.5 5.25v2.25L7.5 12v6.75H3a1.5 1.5 0 0 1-1.5-1.5V5.25z" fill="#FBBC04"/>
+          <path d="M22.5 5.25v2.25L16.5 12v6.75h4.5a1.5 1.5 0 0 0 1.5-1.5V5.25z" fill="#34A853"/>
+        </svg>
       </a>
 
       {/* WhatsApp */}
