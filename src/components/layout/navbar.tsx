@@ -45,7 +45,7 @@ export function Navbar() {
             <a href="#benefits" className={`text-[15px] font-medium hover:opacity-70 transition-opacity ${isScrolled ? "text-[#111827]" : "text-white"}`}>Benefits</a>
             <a href="#pricing" className={`text-[15px] font-medium hover:opacity-70 transition-opacity ${isScrolled ? "text-[#111827]" : "text-white"}`}>Pricing</a>
             <a href="/blog" className={`text-[15px] font-medium hover:opacity-70 transition-opacity ${isScrolled ? "text-[#111827]" : "text-white"}`}>Blog</a>
-            <a href="/contact-us" className={`text-[15px] font-medium hover:opacity-70 transition-opacity ${isScrolled ? "text-[#111827]" : "text-white"}`}>Contact Us</a>
+            <a href="https://api.whatsapp.com/send/?phone=919209552809&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className={`text-[15px] font-medium hover:opacity-70 transition-opacity ${isScrolled ? "text-[#111827]" : "text-white"}`}>Contact Us</a>
           </motion.nav>
 
           <motion.div layout transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }} className="hidden md:flex items-center">
@@ -80,7 +80,7 @@ export function Navbar() {
               <a href="#benefits" onClick={() => setIsOpen(false)} className="text-[17px] font-medium text-[#111827]">Benefits</a>
               <a href="#pricing" onClick={() => setIsOpen(false)} className="text-[17px] font-medium text-[#111827]">Pricing</a>
               <a href="/blog" onClick={() => setIsOpen(false)} className="text-[17px] font-medium text-[#111827]">Blog</a>
-              <a href="/contact-us" onClick={() => setIsOpen(false)} className="text-[17px] font-medium text-[#111827]">Contact Us</a>
+              <a href="https://api.whatsapp.com/send/?phone=919209552809&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)} className="text-[17px] font-medium text-[#111827]">Contact Us</a>
             </nav>
 
             <div className="flex flex-col gap-4 w-full max-w-[280px]">
