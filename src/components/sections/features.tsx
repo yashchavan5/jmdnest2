@@ -49,7 +49,7 @@ export function FeaturesSection() {
   });
 
   return (
-    <section id="features" className="bg-[#f9f9f9] relative pt-12 lg:pt-20" ref={containerRef}>
+    <section id="features" className="bg-[#f9f9f9] relative pt-8 lg:pt-10" ref={containerRef}>
       <div className="container mx-auto px-6 max-w-7xl">
         
         <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-24 relative">
@@ -76,9 +76,9 @@ export function FeaturesSection() {
 
           {/* Right Scrolling Part - Scrolls naturally while left is pinned */}
           <div className="lg:w-[55%] relative pt-12 pb-8 lg:pt-[25vh] lg:pb-[10vh]">
-            <div className="flex flex-col gap-10 md:gap-20 relative z-10">
+            <div className="flex flex-col gap-12 md:gap-16 relative z-10">
               {/* The vertical timeline line */}
-              <div className="absolute left-6 md:left-[2.5rem] top-5 w-[4px] bg-gray-200 z-[-1] ml-[-2px]" style={{ height: 'calc(100% - 120px)' }}>
+              <div className="absolute left-6 md:left-[2.5rem] top-5 w-[4px] bg-gray-200 z-[-1] ml-[-2px]" style={{ height: 'calc(100% - 150px)' }}>
                  <motion.div 
                    className="w-full bg-[#111827] origin-top rounded-full"
                    style={{ scaleY: lineHeight, height: "100%" }}
@@ -108,16 +108,20 @@ function TimelineFeature({ feature, index }: { feature: any, index: number }) {
   const rawY = useTransform(scrollYProgress, [0, 1], [50, 0]);
   const opacity = useSpring(rawOpacity, { stiffness: 100, damping: 25, restDelta: 0.001 });
   const y = useSpring(rawY, { stiffness: 100, damping: 25, restDelta: 0.001 });
-  const borderColor = useTransform(scrollYProgress, [0, 1], ["#e5e7eb", "#10b981"]);
+  
+  // Fill circle black on progress
+  const backgroundColor = useTransform(scrollYProgress, [0, 0.4, 0.6, 1], ["#ffffff", "#ffffff", "#111827", "#111827"]);
+  const borderColor = useTransform(scrollYProgress, [0, 0.4, 0.6, 1], ["#e5e7eb", "#e5e7eb", "#111827", "#111827"]);
+  const color = useTransform(scrollYProgress, [0, 0.4, 0.6, 1], ["#111827", "#111827", "#ffffff", "#ffffff"]);
 
   return (
     <div ref={ref} className="relative pl-16 md:pl-28 w-full group">
       {/* Node indicator */}
       <motion.div 
-        style={{ borderColor }}
-        className="absolute left-6 md:left-[2.5rem] top-4 w-10 h-10 rounded-full bg-white border-[3px] z-10 flex items-center justify-center -translate-x-1/2"
+        style={{ borderColor, backgroundColor }}
+        className="absolute left-6 md:left-[2.5rem] top-4 w-10 h-10 rounded-full border-[3px] z-10 flex items-center justify-center -translate-x-1/2 transition-colors duration-300"
       >
-        <span className="text-[12px] font-bold text-[#111827]">{feature.id}</span>
+        <motion.span style={{ color }} className="text-[12px] font-bold">{feature.id}</motion.span>
       </motion.div>
       
       {/* Content wrapper */}
@@ -128,7 +132,6 @@ function TimelineFeature({ feature, index }: { feature: any, index: number }) {
         <div className="bg-white rounded-[1.5rem] p-6 md:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100/80 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-shadow">
           <h2 className="text-xl lg:text-[1.5rem] font-bold text-[#111827] tracking-tight mb-3 flex items-start justify-between">
             {feature.title}
-            <div className="w-1.5 h-1.5 rounded-full bg-[#10b981] mt-2 opacity-100"></div>
           </h2>
           <p className="text-[15px] lg:text-[1.05rem] text-[#6b7280] leading-[1.6] max-w-xl">
             {feature.description}

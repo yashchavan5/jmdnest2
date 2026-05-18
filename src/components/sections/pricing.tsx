@@ -45,12 +45,12 @@ export function PricingSection() {
           <div className="bg-[#f2f0ea] rounded-[2rem] p-8 flex flex-col h-full hover:shadow-xl transition-shadow border border-[#e5e0d8]">
             <h3 className="text-[17px] font-bold text-[#4b5563] mb-2">Starter</h3>
             <div className="flex flex-col mb-4 h-[70px] justify-center">
-              <div className="text-3xl font-bold text-[#111827] flex items-baseline gap-1">
+              <div className="text-4xl lg:text-[2.5rem] font-bold text-[#111827] flex items-baseline gap-1">
                 {billing === "Annually" ? "₹6,499" : "₹699"}<span className="text-[1.25rem] font-medium text-[#4b5563]">/{billing === "Annually" ? "yr" : "mo"} <span className="text-xs font-normal">+ GST</span></span>
               </div>
             </div>
             <p className="text-[#6b7280] mb-6 text-[13px] font-medium h-[40px]">Perfect for single PG owners</p>
-            <div className="bg-[#eaddce] text-[#111827] text-xs font-bold px-3 py-2 rounded-md block mb-6 text-center w-full">Manage 1 Property</div>
+            <div className="bg-[#eaddce] text-[#111827] text-[14px] font-extrabold tracking-wide px-4 py-2.5 rounded-lg block mb-6 text-center w-full uppercase">Manage 1 Property</div>
 
             <div className="h-6 mb-6">
               {billing === "Annually" && <p className="text-green-700 text-xs font-semibold flex items-center gap-1"><svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg> Save ₹1,889 yearly</p>}
@@ -79,13 +79,13 @@ export function PricingSection() {
             </div>
             <h3 className="text-[17px] font-bold text-[#4b5563] mb-2">Growth</h3>
             <div className="flex flex-col mb-4 h-[70px] justify-center">
-              <div className="text-3xl font-bold text-[#111827] flex items-baseline gap-1">
+              <div className="text-4xl lg:text-[2.5rem] font-bold text-[#111827] flex items-baseline gap-1">
                 {billing === "Annually" ? "₹11,998" : "₹1,298"}<span className="text-[1.25rem] font-medium text-[#4b5563]">/{billing === "Annually" ? "yr" : "mo"} <span className="text-xs font-normal">+ GST</span></span>
               </div>
               <span className="text-xs text-[#6b7280] font-medium mt-1">{billing === "Annually" ? "(₹6,499 + ₹5,499)" : "(₹699 + ₹599)"}</span>
             </div>
             <p className="text-[#6b7280] mb-6 text-[13px] font-medium h-[40px]">For growing PG businesses</p>
-            <div className="bg-[#bdf0ce] text-[#0d6a2f] text-xs font-bold px-3 py-2 rounded-md block mb-6 border border-[#a2deb6] text-center w-full">Manage 2 Properties</div>
+            <div className="bg-[#bdf0ce] text-[#0d6a2f] text-[14px] font-extrabold tracking-wide px-4 py-2.5 rounded-lg block mb-6 border border-[#a2deb6] text-center w-full uppercase">Manage 2 Properties</div>
 
             <div className="h-6 mb-6">
               {billing === "Annually" && <p className="text-green-700 text-xs font-semibold flex items-center gap-1"><svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg> Save ₹3,578 yearly</p>}
@@ -108,13 +108,13 @@ export function PricingSection() {
           <div className="bg-[#f2f0ea] rounded-[2rem] p-8 flex flex-col h-full hover:shadow-xl transition-shadow border border-[#e5e0d8]">
             <h3 className="text-[17px] font-bold text-[#4b5563] mb-2">Business</h3>
             <div className="flex flex-col mb-4 h-[70px] justify-center">
-              <div className="text-3xl font-bold text-[#111827] flex items-baseline gap-1">
+              <div className="text-4xl lg:text-[2.5rem] font-bold text-[#111827] flex items-baseline gap-1">
                 {billing === "Annually" ? "₹16,497" : "₹1,747"}<span className="text-[1.25rem] font-medium text-[#4b5563]">/{billing === "Annually" ? "yr" : "mo"} <span className="text-xs font-normal">+ GST</span></span>
               </div>
               <span className="text-xs text-[#6b7280] font-medium mt-1">{billing === "Annually" ? "(₹6,499 + ₹5,499 + ₹4,499)" : "(₹699 + ₹599 + ₹449)"}</span>
             </div>
             <p className="text-[#6b7280] mb-6 text-[13px] font-medium h-[40px]">Ideal for expanding PG operators</p>
-            <div className="bg-[#eaddce] text-[#111827] text-xs font-bold px-3 py-2 rounded-md block mb-6 text-center w-full">Manage 3 Properties</div>
+            <div className="bg-[#eaddce] text-[#111827] text-[14px] font-extrabold tracking-wide px-4 py-2.5 rounded-lg block mb-6 text-center w-full uppercase">Manage 3 Properties</div>
 
             <div className="h-6 mb-6">
               {billing === "Annually" && <p className="text-green-700 text-xs font-semibold flex items-center gap-1"><svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg> Save ₹4,467 yearly</p>}
@@ -138,12 +138,12 @@ export function PricingSection() {
             <h3 className="text-[17px] font-bold text-gray-300 mb-2">Enterprise</h3>
             <div className="flex flex-col mb-4 h-[70px] justify-center">
               <span className="text-sm text-gray-400 mb-1">Starting from</span>
-              <div className="text-3xl font-bold text-white flex items-baseline gap-1">
+              <div className="text-4xl lg:text-[2.5rem] font-bold text-white flex items-baseline gap-1">
                 {billing === "Annually" ? "₹20,496" : "₹2,080"}<span className="text-[1.25rem] font-medium text-gray-400">/{billing === "Annually" ? "yr" : "mo"} <span className="text-xs font-normal text-gray-400">+ GST</span></span>
               </div>
             </div>
             <p className="text-gray-400 mb-6 text-[13px] font-medium h-[40px]">Built for large PG networks</p>
-            <div className="bg-[#374151] text-gray-200 text-xs font-bold px-3 py-2 rounded-md block mb-6 border border-gray-600 text-center w-full">Manage 4+ Properties</div>
+            <div className="bg-[#374151] text-gray-200 text-[14px] font-extrabold tracking-wide px-4 py-2.5 rounded-lg block mb-6 border border-gray-600 text-center w-full uppercase">Manage 4+ Properties</div>
 
             <div className="h-6 mb-6"></div>
 

@@ -16,7 +16,7 @@ export function HeroSection() {
         {/* Dark overlay for text readability over bright image */}
         <div className="absolute inset-0 bg-black/60" />
       </div>
-      <div className="container mx-auto relative z-20 px-6 md:px-12 lg:px-24 pt-24 pb-12 md:pt-32 md:pb-16 flex justify-center w-full">
+      <div className="container mx-auto relative z-20 px-6 md:px-12 lg:px-24 pt-24 pb-6 md:pt-32 md:pb-10 flex justify-center w-full">
         <div className="max-w-4xl w-full flex flex-col items-center text-center mx-auto relative">
           
           {/* JMD Nest Logo Background Graphic */}
@@ -67,7 +67,7 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
           >
             <Link
-              href="https://wa.me/919209552809"
+              href="https://calendly.com/jmdsolutions"
               className="inline-block bg-[#e67e22] hover:bg-[#d35400] text-white text-[15px] md:text-base font-bold px-8 py-3 md:px-10 md:py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-[#e67e22]/30 hover:-translate-y-1 active:translate-y-0"
               target="_blank"
               rel="noopener noreferrer"
