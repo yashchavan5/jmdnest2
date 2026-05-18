@@ -8,7 +8,7 @@ const logos = [
 
 export function MarqueeSection() {
   return (
-    <section className="py-8 bg-white relative z-20 rounded-t-[3rem] mt-[-4rem] shadow-[0_-20px_40px_rgba(0,0,0,0.05)]">
+    <section className="py-6 bg-white relative z-20 rounded-t-[2rem] md:rounded-t-[3rem] -mt-6 md:-mt-10 shadow-[0_-20px_40px_rgba(0,0,0,0.05)]">
       <div className="container mx-auto px-6 max-w-4xl text-center">
         <p className="text-[15px] font-medium text-[#6b7280] mb-8">
           Trusted by 24+ PG owners & managers across India

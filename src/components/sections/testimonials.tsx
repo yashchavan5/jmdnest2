@@ -36,16 +36,16 @@ export function TestimonialsSection() {
         <div className="text-center max-w-4xl mx-auto flex flex-col items-center">
           <div className="flex flex-col items-center">
             <h3 className="text-[#8c8273] font-bold tracking-widest uppercase text-xs mb-6">
-              JMDNest
+              JMD | Nest
             </h3>
             <h2 className="text-4xl md:text-5xl font-bold text-[#111827] tracking-tight mb-12 leading-[1.1] text-center max-w-2xl mx-auto">
-              "JMDNest is by far the best<br />PG management tool I have ever used"
+              "JMD | Nest is by far the best<br />PG management tool I have ever used"
             </h2>
           </div>
           <div className="flex flex-col items-center">
             <img src="/jmdnest-logo-final.png" alt="JMDNest Logo" className="w-20 h-20 mb-4 object-contain drop-shadow-[0_4px_12px_rgba(0,0,0,0.1)]" />
-            <h4 className="font-bold text-[#111827] text-sm">JMDNest</h4>
-            <p className="text-xs text-[#6b7280]">JMDNest Teams, Pune Maharashtra </p>
+            <h4 className="font-bold text-[#111827] text-sm">JMD | Nest</h4>
+            <p className="text-xs text-[#6b7280]">JMD | Nest Teams, Pune Maharashtra </p>
           </div>
         </div>
       </div>

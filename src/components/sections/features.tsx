@@ -75,10 +75,10 @@ export function FeaturesSection() {
           </div>
 
           {/* Right Scrolling Part - Scrolls naturally while left is pinned */}
-          <div className="lg:w-[55%] relative pt-16 pb-8 lg:pt-[25vh] lg:pb-[10vh]">
-            <div className="flex flex-col gap-16 md:gap-20 relative z-10">
+          <div className="lg:w-[55%] relative pt-12 pb-8 lg:pt-[25vh] lg:pb-[10vh]">
+            <div className="flex flex-col gap-10 md:gap-20 relative z-10">
               {/* The vertical timeline line */}
-              <div className="absolute left-6 md:left-[2.5rem] top-5 w-[4px] bg-gray-200 z-[-1] ml-[-2px]" style={{ height: 'calc(100% - 140px)' }}>
+              <div className="absolute left-6 md:left-[2.5rem] top-5 w-[4px] bg-gray-200 z-[-1] ml-[-2px]" style={{ height: 'calc(100% - 120px)' }}>
                  <motion.div 
                    className="w-full bg-[#111827] origin-top rounded-full"
                    style={{ scaleY: lineHeight, height: "100%" }}
@@ -101,33 +101,36 @@ function TimelineFeature({ feature, index }: { feature: any, index: number }) {
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start 90%", "start 40%"]
+    offset: ["start 85%", "start 35%"]
   })
 
-  const opacity = useTransform(scrollYProgress, [0, 1], [0.2, 1]);
-  const y = useTransform(scrollYProgress, [0, 1], [50, 0]);
+  const rawOpacity = useTransform(scrollYProgress, [0, 1], [0.1, 1]);
+  const rawY = useTransform(scrollYProgress, [0, 1], [50, 0]);
+  const opacity = useSpring(rawOpacity, { stiffness: 100, damping: 25, restDelta: 0.001 });
+  const y = useSpring(rawY, { stiffness: 100, damping: 25, restDelta: 0.001 });
+  const borderColor = useTransform(scrollYProgress, [0, 1], ["#e5e7eb", "#10b981"]);
 
   return (
-    <div ref={ref} className="relative pl-24 md:pl-32 w-full group">
+    <div ref={ref} className="relative pl-16 md:pl-28 w-full group">
       {/* Node indicator */}
-      <div className="absolute left-6 md:left-[2.5rem] top-0 w-11 h-11 rounded-full bg-[#f9f9f9] border border-gray-200 z-10 flex items-center justify-center -translate-x-1/2 transition-colors duration-300">
-        <span className="text-[13px] font-medium text-[#6b7280] group-hover:text-[#111827] transition-colors">{feature.id}</span>
-      </div>
-      
-      {/* Red dot indicator */}
-      <div className="absolute left-1 md:left-[0.5rem] top-[20px] w-[3px] h-[3px] rounded-full bg-red-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      <motion.div 
+        style={{ borderColor }}
+        className="absolute left-6 md:left-[2.5rem] top-4 w-10 h-10 rounded-full bg-white border-[3px] z-10 flex items-center justify-center -translate-x-1/2"
+      >
+        <span className="text-[12px] font-bold text-[#111827]">{feature.id}</span>
+      </motion.div>
       
       {/* Content wrapper */}
       <motion.div 
         style={{ opacity, y }}
-        className="w-full pt-1"
+        className="w-full"
       >
-        <div className="relative">
-          <h2 className="text-2xl lg:text-[1.75rem] font-bold text-[#111827] tracking-tight mb-4 flex items-start justify-between">
+        <div className="bg-white rounded-[1.5rem] p-6 md:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100/80 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-shadow">
+          <h2 className="text-xl lg:text-[1.5rem] font-bold text-[#111827] tracking-tight mb-3 flex items-start justify-between">
             {feature.title}
-            <div className="w-2 h-2 border-r-2 border-t-2 border-[#10b981] mt-2 opacity-100"></div>
+            <div className="w-1.5 h-1.5 rounded-full bg-[#10b981] mt-2 opacity-100"></div>
           </h2>
-          <p className="text-[16px] lg:text-[1.125rem] text-[#6b7280] leading-[1.6] font-light max-w-xl">
+          <p className="text-[15px] lg:text-[1.05rem] text-[#6b7280] leading-[1.6] max-w-xl">
             {feature.description}
           </p>
         </div>

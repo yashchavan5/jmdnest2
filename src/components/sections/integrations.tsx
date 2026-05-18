@@ -101,16 +101,15 @@ export function IntegrationsSection() {
             {/* Subtle glow behind the logo */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 md:w-64 h-48 md:h-64 bg-white/10 rounded-full blur-[60px] md:blur-[80px] pointer-events-none"></div>
             
-            <motion.div 
-              initial={{ scale: 0.8, opacity: 0 }}
-              whileInView={{ scale: 1, opacity: 1 }}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ delay: 0.4, type: "spring", stiffness: 200, damping: 20 }}
-              className="w-32 h-32 md:w-[160px] md:h-[160px] flex items-center justify-center mb-6 md:mb-10 relative z-10 mx-auto"
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="mb-8 relative z-10"
             >
-               <img src="/jmdnest-logo-final.png" alt="JMDNest Logo" className="w-[85%] h-[85%] object-contain drop-shadow-[0_0_20px_rgba(255,255,255,0.3)]" />
+              <img src="/jmdnest-logo-final.png" alt="JMD | Nest Logo" className="w-24 md:w-32 h-auto object-contain drop-shadow-[0_8px_16px_rgba(0,0,0,0.5)]" />
             </motion.div>
-            
             <motion.h3 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

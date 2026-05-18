@@ -92,7 +92,7 @@ export function PricingSection() {
             </div>
 
             <ul className="space-y-3 mb-10 text-[#4b5563] text-[14px]">
-              <li className="flex items-start gap-3 font-semibold text-[#111827]"><svg className="w-4 h-4 mt-0.5 text-[#111827] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg> <span>Everything in Starter, plus:</span></li>
+              <li className="flex items-start gap-3"><svg className="w-4 h-4 mt-0.5 text-[#111827] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg> <span className="font-bold text-[#111827]">All features included in Starter</span></li>
               <li className="flex items-start gap-3"><svg className="w-4 h-4 mt-0.5 text-[#111827] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg> <span>Multi-property management</span></li>
               <li className="flex items-start gap-3"><svg className="w-4 h-4 mt-0.5 text-[#111827] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg> <span>Multiple admin & staff support</span></li>
               <li className="flex items-start gap-3"><svg className="w-4 h-4 mt-0.5 text-[#111827] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg> <span>Centralized dashboard for all properties</span></li>
@@ -121,7 +121,7 @@ export function PricingSection() {
             </div>
 
             <ul className="space-y-3 mb-10 text-[#4b5563] text-[14px]">
-              <li className="flex items-start gap-3 font-semibold text-[#111827]"><svg className="w-4 h-4 mt-0.5 text-[#111827] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg> <span>Everything in Growth, plus:</span></li>
+              <li className="flex items-start gap-3"><svg className="w-4 h-4 mt-0.5 text-[#111827] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg> <span className="font-bold text-[#111827]">All features included in Starter</span></li>
               <li className="flex items-start gap-3"><svg className="w-4 h-4 mt-0.5 text-[#111827] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg> <span>Complete staff collaboration</span></li>
               <li className="flex items-start gap-3"><svg className="w-4 h-4 mt-0.5 text-[#111827] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg> <span>Faster report generation</span></li>
               <li className="flex items-start gap-3"><svg className="w-4 h-4 mt-0.5 text-[#111827] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg> <span>Better operational control</span></li>
@@ -158,6 +158,7 @@ export function PricingSection() {
             </div>
 
             <ul className="space-y-3 mb-10 text-gray-300 text-[14px]">
+              <li className="flex items-start gap-3"><svg className="w-4 h-4 mt-0.5 text-blue-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg> <span className="font-bold text-white">All features included in Starter</span></li>
               <li className="flex items-start gap-3"><svg className="w-4 h-4 mt-0.5 text-blue-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg> <span>Unlimited scalability</span></li>
               <li className="flex items-start gap-3"><svg className="w-4 h-4 mt-0.5 text-blue-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg> <span>Multi-admin access</span></li>
               <li className="flex items-start gap-3"><svg className="w-4 h-4 mt-0.5 text-blue-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg> <span>Complete analytics & reports</span></li>

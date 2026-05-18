@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen w-full flex items-center overflow-hidden bg-[#0f1c2e]">
+    <section className="relative min-h-[60vh] md:min-h-[75vh] w-full flex items-center overflow-hidden bg-[#0f1c2e]">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
@@ -16,17 +16,27 @@ export function HeroSection() {
         {/* Dark overlay for text readability over bright image */}
         <div className="absolute inset-0 bg-black/60" />
       </div>
+      <div className="container mx-auto relative z-20 px-6 md:px-12 lg:px-24 pt-24 pb-12 md:pt-32 md:pb-16 flex justify-center w-full">
+        <div className="max-w-4xl w-full flex flex-col items-center text-center mx-auto relative">
+          
+          {/* JMD Nest Logo Background Graphic */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 0.15, scale: 1 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[300px] md:max-w-[450px] flex justify-center z-[-1] pointer-events-none"
+          >
+            <img src="/jmdnest-logo-final.png" alt="JmdNest Logo" className="w-full h-auto object-contain drop-shadow-2xl" />
+          </motion.div>
 
-      <div className="container mx-auto relative z-20 px-6 md:px-12 lg:px-24 pt-32 pb-24 md:pb-32 flex justify-center w-full">
-        <div className="max-w-4xl w-full flex flex-col items-center text-center mx-auto">
-          {/* JMD Nest Logo */}
+          {/* Brand Name Label */}
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="mb-8 flex justify-center w-full"
+            className="mb-4 md:mb-6"
           >
-            <img src="/jmdnest-logo-final.png" alt="JmdNest Logo" className="h-20 md:h-24 w-auto object-contain drop-shadow-[0_4px_12px_rgba(255,255,255,0.4)]" />
+            <span className="text-lg md:text-xl font-bold text-[#e67e22] tracking-widest uppercase bg-black/30 px-6 py-2 rounded-full border border-white/10 backdrop-blur-sm">JMD | Nest</span>
           </motion.div>
 
           {/* Main Heading */}

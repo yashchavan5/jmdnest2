@@ -8,8 +8,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "JmdNest - The Complete PG Management System",
-  description: "Simple, modern, and sleek. JmdNest is perfect for PG owners and managers.",
+  title: "JMD|Nest - The Complete PG Management System",
+  description: "Simple, modern, and sleek. JMD|Nest is perfect for PG owners and managers.",
 };
 
 import { LenisProvider } from "@/components/lenis-provider";

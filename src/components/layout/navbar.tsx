@@ -37,7 +37,7 @@ export function Navbar() {
         >
           <motion.div layout transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }} className="flex items-center gap-2 pl-2 z-50">
             <img src="/jmdnest-logo-final.png" alt="JMDNest" className="h-9 md:h-11 w-auto object-contain drop-shadow-[0_2px_8px_rgba(255,255,255,0.4)]" />
-            <span className={`font-bold text-lg md:text-xl tracking-tight ${isScrolled || isOpen ? "text-[#111827]" : "text-white"}`}>JMDNest</span>
+            <span className={`font-bold text-lg md:text-xl tracking-tight ${isScrolled || isOpen ? "text-[#111827]" : "text-white"}`}>JMD | Nest</span>
           </motion.div>
           
           <motion.nav layout transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }} className="hidden md:flex items-center gap-8">

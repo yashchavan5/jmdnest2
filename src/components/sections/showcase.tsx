@@ -6,13 +6,6 @@ import { motion, AnimatePresence } from "framer-motion"
 export function ShowcaseSection() {
   const [device, setDevice] = useState<"desktop" | "mobile">("desktop")
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setDevice((prev) => (prev === "desktop" ? "mobile" : "desktop"))
-    }, 3000)
-    return () => clearInterval(interval)
-  }, [])
-
   return (
     <section className="py-10 md:py-16 bg-[#f9f8f6] overflow-hidden">
       <div className="container mx-auto px-6 text-center flex flex-col items-center">
@@ -37,29 +30,53 @@ export function ShowcaseSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="relative w-full max-w-5xl h-[350px] sm:h-[450px] md:h-[700px] rounded-3xl md:rounded-[2rem] overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] bg-[#f9f8f6] border border-black/5"
         >
-          <AnimatePresence mode="popLayout">
+          <AnimatePresence mode="wait">
             {device === "desktop" ? (
-              <motion.img
+              <motion.div
                 key="desktop"
-                initial={{ opacity: 0, scale: 0.96 }}
+                initial={{ opacity: 0, scale: 0.98 }}
                 animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 1.04 }}
-                transition={{ duration: 0.5, ease: "easeInOut" }}
-                src="/jmdnest-web-mockup.png"
-                alt="JMDNest Web App"
-                className="absolute inset-0 w-full h-full object-cover object-top"
-              />
+                exit={{ opacity: 0, scale: 0.98 }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+                className="absolute inset-0 w-full h-full bg-black flex items-center justify-center"
+              >
+                <video
+                  key="desktop-video"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full h-full object-cover object-top"
+                  poster="/jmdnest-web-mockup.png"
+                >
+                  <source src="/demo-web.mp4" type="video/mp4" />
+                  {/* Fallback image if video is not available */}
+                  <img src="/jmdnest-web-mockup.png" alt="JMDNest Web App" className="w-full h-full object-cover object-top" />
+                </video>
+              </motion.div>
             ) : (
-              <motion.img
+              <motion.div
                 key="mobile"
-                initial={{ opacity: 0, scale: 0.96 }}
+                initial={{ opacity: 0, scale: 0.98 }}
                 animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 1.04 }}
-                transition={{ duration: 0.5, ease: "easeInOut" }}
-                src="/jmdnest-mobile-mockup.png"
-                alt="JMDNest Mobile App"
-                className="absolute inset-0 w-full h-full object-cover object-top"
-              />
+                exit={{ opacity: 0, scale: 0.98 }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+                className="absolute inset-0 w-full h-full bg-black flex items-center justify-center"
+              >
+                <video
+                  key="mobile-video"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full h-full object-cover object-top"
+                  poster="/jmdnest-mobile-mockup.png"
+                >
+                  <source src="/demo-mobile.mp4" type="video/mp4" />
+                  {/* Fallback image if video is not available */}
+                  <img src="/jmdnest-mobile-mockup.png" alt="JMDNest Mobile App" className="w-full h-full object-cover object-top" />
+                </video>
+              </motion.div>
             )}
           </AnimatePresence>
 
