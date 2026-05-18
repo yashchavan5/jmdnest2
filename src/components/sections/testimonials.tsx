@@ -4,25 +4,25 @@ import { motion } from "framer-motion"
 
 const testimonials = [
   {
-    quote: "Managing multiple PG properties was a nightmare before JMDNest. Now tenant onboarding, rent collection, and maintenance requests all happen in one place. Absolutely seamless.",
+    quote: "Managing multiple PG properties was a nightmare before JMD | Nest. Now tenant onboarding, rent collection, and maintenance requests all happen in one place. Absolutely seamless.",
     author: "Rajesh Kumar",
     role: "PG Owner, Bangalore",
     image: "/indian-male-1.png"
   },
   {
-    quote: "We used to track tenants in spreadsheets and collect rent via cash. JMDNest digitized everything — occupancy tracking, automated reminders, and online payments. A game changer.",
+    quote: "We used to track tenants in spreadsheets and collect rent via cash. JMD | Nest digitized everything — occupancy tracking, automated reminders, and online payments. A game changer.",
     author: "Priya Sharma",
     role: "PG Manager, Mumbai",
     image: "/indian-female-1.png"
   },
   {
-    quote: "With 200+ beds across 5 locations, JMDNest gives me a single dashboard to monitor everything. Vacancy alerts, expense reports, and tenant feedback — all in real-time.",
+    quote: "With 200+ beds across 5 locations, JMD | Nest gives me a single dashboard to monitor everything. Vacancy alerts, expense reports, and tenant feedback — all in real-time.",
     author: "Amit Patel",
     role: "Multi-Property PG Owner",
     image: "/indian-male-2.png"
   },
   {
-    quote: "JMDNest helped us reduce vacancy rates by 40%. The automated listing sync and tenant management tools are incredibly powerful for any PG business.",
+    quote: "JMD | Nest helped us reduce vacancy rates by 40%. The automated listing sync and tenant management tools are incredibly powerful for any PG business.",
     author: "Sneha Reddy",
     role: "Operations Head, NestStay PGs",
     image: "/indian-female-2.png"

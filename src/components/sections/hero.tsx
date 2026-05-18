@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-[60vh] md:min-h-[75vh] w-full flex items-center overflow-hidden bg-[#0f1c2e]">
+    <section className="relative w-full flex items-center overflow-hidden bg-[#0f1c2e]">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
@@ -16,7 +16,7 @@ export function HeroSection() {
         {/* Dark overlay for text readability over bright image */}
         <div className="absolute inset-0 bg-black/60" />
       </div>
-      <div className="container mx-auto relative z-20 px-6 md:px-12 lg:px-24 pt-24 pb-6 md:pt-32 md:pb-10 flex justify-center w-full">
+      <div className="container mx-auto relative z-20 px-6 md:px-12 lg:px-24 pt-28 pb-8 md:pt-36 md:pb-12 flex justify-center w-full">
         <div className="max-w-4xl w-full flex flex-col items-center text-center mx-auto relative">
           
           {/* JMD Nest Logo Background Graphic */}

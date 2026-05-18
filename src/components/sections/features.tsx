@@ -70,7 +70,7 @@ export function FeaturesSection() {
             </h2>
             
             <p className="text-[15px] lg:text-lg text-[#6b7280] leading-relaxed font-light max-w-sm hidden sm:block mx-auto lg:mx-0">
-              Design Flow for your needs and JMDNest does the rest for you automatically.
+              Design Flow for your needs and JMD | Nest does the rest for you automatically.
             </p>
           </div>
 
