@@ -16,9 +16,9 @@ export function HeroSection() {
         {/* Dark overlay for text readability over bright image */}
         <div className="absolute inset-0 bg-black/60" />
       </div>
-      <div className="container mx-auto relative z-20 px-6 md:px-12 lg:px-24 pt-28 pb-8 md:pt-36 md:pb-12 flex justify-center w-full">
+      <div className="container mx-auto relative z-20 px-6 md:px-12 lg:px-24 pt-20 pb-8 md:pt-24 md:pb-12 flex justify-center w-full">
         <div className="max-w-4xl w-full flex flex-col items-center text-center mx-auto relative">
-          
+
           {/* JMD Nest Logo Background Graphic */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
@@ -36,7 +36,6 @@ export function HeroSection() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="mb-4 md:mb-6"
           >
-            <span className="text-lg md:text-xl font-bold text-[#e67e22] tracking-widest uppercase bg-black/30 px-6 py-2 rounded-full border border-white/10 backdrop-blur-sm">JMD | Nest</span>
           </motion.div>
 
           {/* Main Heading */}

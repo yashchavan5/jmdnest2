@@ -11,7 +11,7 @@ export function FloatingContact() {
         className="w-12 h-12 md:w-14 md:h-14 bg-white hover:bg-gray-50 rounded-full border border-gray-200 flex items-center justify-center shadow-lg transition-transform hover:-translate-y-1"
         aria-label="Book a meeting on Calendly"
       >
-        <img src="/calendly-logo.png" alt="Calendly" className="w-7 h-7 md:w-8 md:h-8 object-contain" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Calendly_logo.svg/512px-Calendly_logo.svg.png" alt="Calendly" className="w-7 h-7 md:w-8 md:h-8 object-contain" />
       </a>
 
       {/* Email / Gmail */}
@@ -20,7 +20,7 @@ export function FloatingContact() {
         className="w-12 h-12 md:w-14 md:h-14 bg-white hover:bg-gray-50 rounded-full border border-gray-200 flex items-center justify-center shadow-lg transition-transform hover:-translate-y-1"
         aria-label="Send an email"
       >
-        <img src="/gmail-logo.png" alt="Gmail" className="w-7 h-7 md:w-8 md:h-8 object-contain" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="Gmail" className="w-7 h-7 md:w-8 md:h-8 object-contain" />
       </a>
 
       {/* WhatsApp */}
