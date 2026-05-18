@@ -55,7 +55,7 @@ export function FeaturesSection() {
         <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-24 relative">
           
           {/* Left Sticky Part - Pinned during scroll only on desktop */}
-          <div className="w-full lg:w-[45%] lg:sticky lg:top-0 h-auto lg:h-screen flex flex-col items-center lg:items-start justify-center text-center lg:text-left pt-6 pb-12 lg:pt-0 lg:pb-0 z-30 bg-transparent transition-all">
+          <div className="w-full lg:w-[45%] lg:sticky lg:top-0 h-auto lg:h-screen flex flex-col items-center lg:items-start lg:justify-start text-center lg:text-left pt-6 pb-12 lg:pt-24 lg:pb-0 z-30 bg-transparent transition-all">
             <div className="inline-flex items-center justify-center relative mb-4 lg:mb-8">
               <div className="absolute -left-2 -bottom-1 w-2 h-2 border-l-2 border-b-2 border-[#10b981]"></div>
               <div className="absolute -right-2 -top-1 w-2 h-2 border-r-2 border-t-2 border-[#10b981]"></div>
@@ -75,7 +75,7 @@ export function FeaturesSection() {
           </div>
 
           {/* Right Scrolling Part - Scrolls naturally while left is pinned */}
-          <div className="lg:w-[55%] relative pt-12 pb-8 lg:pt-[25vh] lg:pb-[10vh]">
+          <div className="lg:w-[55%] relative pt-12 pb-8 lg:pt-24 lg:pb-24">
             <div className="flex flex-col gap-12 md:gap-16 relative z-10">
               {/* The vertical timeline line */}
               <div className="absolute left-6 md:left-[2.5rem] top-5 w-[4px] bg-gray-200 z-[-1] ml-[-2px]" style={{ height: 'calc(100% - 150px)' }}>
