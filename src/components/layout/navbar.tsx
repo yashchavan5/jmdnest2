@@ -31,11 +31,11 @@ export function Navbar() {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className={`pointer-events-auto flex items-center justify-between transition-colors duration-500 w-full ${
             isScrolled 
-              ? "max-w-4xl bg-white/50 backdrop-blur-2xl border border-white/50 shadow-[0_8px_32px_rgba(0,0,0,0.04)] rounded-full px-5 py-2.5" 
-              : "max-w-7xl bg-transparent border border-transparent px-2 py-4"
+              ? "max-w-4xl bg-white/50 backdrop-blur-2xl border border-white/50 shadow-[0_8px_32px_rgba(0,0,0,0.04)] rounded-[2rem] px-6 py-2.5" 
+              : "max-w-7xl bg-transparent border border-transparent rounded-[3.345rem] px-2 py-4"
           }`}
         >
-          <motion.div layout transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }} className="flex items-center gap-2 pl-2 z-50">
+          <motion.div layout transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }} className="flex items-center gap-2 z-50">
             <img src="/jmdnest-logo-final.png" alt="JMDNest" className="h-9 md:h-11 w-auto object-contain drop-shadow-[0_2px_8px_rgba(255,255,255,0.4)]" />
             <span className={`font-bold text-lg md:text-xl tracking-tight ${isScrolled || isOpen ? "text-[#111827]" : "text-white"}`}>JMD | Nest</span>
           </motion.div>
@@ -49,7 +49,11 @@ export function Navbar() {
           </motion.nav>
 
           <motion.div layout transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }} className="hidden md:flex items-center">
-            <Link href="https://calendly.com/jmdsolutions" target="_blank" rel="noopener noreferrer" className="bg-[#1a1818] hover:bg-black text-white text-[15px] font-bold px-6 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            <Link href="https://calendly.com/jmdsolutions" target="_blank" rel="noopener noreferrer" className="bg-[#1a1818] hover:bg-black text-white text-[15px] font-bold px-6 py-2.5 rounded-full transition-colors whitespace-nowrap flex items-center justify-center gap-2">
+              <svg className="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h7.1a7.9 7.9 0 0 1 11.9-8.8V7a3 3 0 0 0-3-3zM5 6h14a1 1 0 0 1 1 1v1H4V7a1 1 0 0 1 1-1zm3 6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zm0 6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zm6-6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1z" />
+                <path d="M18 13a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm.5 2.5v2.3l1.8 1.8-.7.7-2.1-2.1V15.5h1z" />
+              </svg>
               Get a Free Demo
             </Link>
           </motion.div>
@@ -88,8 +92,12 @@ export function Navbar() {
                 href="https://calendly.com/jmdsolutions" 
                 target="_blank" rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
-                className="bg-[#1a1818] text-white text-[17px] font-bold px-8 py-4 rounded-full text-center w-full shadow-lg"
+                className="bg-[#1a1818] text-white text-[17px] font-bold px-8 py-4 rounded-full text-center w-full shadow-lg flex items-center justify-center gap-2"
               >
+                <svg className="w-5 h-5 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h7.1a7.9 7.9 0 0 1 11.9-8.8V7a3 3 0 0 0-3-3zM5 6h14a1 1 0 0 1 1 1v1H4V7a1 1 0 0 1 1-1zm3 6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zm0 6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zm6-6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1z" />
+                  <path d="M18 13a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm.5 2.5v2.3l1.8 1.8-.7.7-2.1-2.1V15.5h1z" />
+                </svg>
                 Get a Free Demo
               </Link>
               <a 

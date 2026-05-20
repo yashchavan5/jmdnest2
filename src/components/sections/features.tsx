@@ -78,7 +78,7 @@ export function FeaturesSection() {
           <div className="lg:w-[55%] relative pt-12 pb-8 lg:pt-24 lg:pb-24">
             <div className="flex flex-col gap-12 md:gap-16 relative z-10">
               {/* The vertical timeline line */}
-              <div className="absolute left-6 md:left-[2.5rem] top-5 w-[4px] bg-gray-200 z-[-1] ml-[-2px]" style={{ height: 'calc(100% - 150px)' }}>
+              <div className="absolute left-6 md:left-[2.5rem] top-5 w-[4px] bg-gray-200 z-[-1] ml-[-2px]" style={{ height: 'calc(100% - 190px)' }}>
                  <motion.div 
                    className="w-full bg-[#111827] origin-top rounded-full"
                    style={{ scaleY: lineHeight, height: "100%" }}
@@ -110,9 +110,9 @@ function TimelineFeature({ feature, index }: { feature: any, index: number }) {
   const y = useSpring(rawY, { stiffness: 100, damping: 25, restDelta: 0.001 });
   
   // Fill circle black on progress
-  const backgroundColor = useTransform(scrollYProgress, [0, 0.4, 0.6, 1], ["#ffffff", "#ffffff", "#111827", "#111827"]);
-  const borderColor = useTransform(scrollYProgress, [0, 0.4, 0.6, 1], ["#e5e7eb", "#e5e7eb", "#111827", "#111827"]);
-  const color = useTransform(scrollYProgress, [0, 0.4, 0.6, 1], ["#111827", "#111827", "#ffffff", "#ffffff"]);
+  const backgroundColor = useTransform(scrollYProgress, [0.4, 0.8], ["#ffffff", "#111827"]);
+  const borderColor = useTransform(scrollYProgress, [0.4, 0.8], ["#e5e7eb", "#111827"]);
+  const color = useTransform(scrollYProgress, [0.4, 0.8], ["#111827", "#ffffff"]);
 
   return (
     <div ref={ref} className="relative pl-16 md:pl-28 w-full group">

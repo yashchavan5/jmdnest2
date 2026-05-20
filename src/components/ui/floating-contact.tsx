@@ -11,7 +11,11 @@ export function FloatingContact() {
         className="w-12 h-12 md:w-14 md:h-14 bg-white hover:bg-gray-50 rounded-full border border-gray-200 flex items-center justify-center shadow-lg transition-transform hover:-translate-y-1"
         aria-label="Book a meeting on Calendly"
       >
-        <img src="/calendly-logo.png" alt="Calendly" className="w-7 h-7 md:w-8 md:h-8 object-contain" />
+        <svg className="w-6 h-6 md:w-7 md:h-7" viewBox="0 0 24 24" fill="#111827" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h7a8 8 0 0 1 11-10.4V7a3 3 0 0 0-3-3zM5 6h14a1 1 0 0 1 1 1v1H4V7a1 1 0 0 1 1-1zm3 6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zm0 6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zm6-6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1z" />
+          <circle cx="18" cy="18" r="5" fill="#111827" />
+          <path d="M18 15v3.5l2 2" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
       </a>
 
       {/* Email / Gmail */}

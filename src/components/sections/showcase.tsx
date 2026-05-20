@@ -17,7 +17,11 @@ export function ShowcaseSection() {
           transition={{ duration: 0.6 }}
           className="mb-16"
         >
-          <h3 className="text-[#8c8273] font-bold tracking-widest uppercase text-xs mb-4">SEAMLESS ACROSS DEVICES</h3>
+          <div className="inline-flex items-center justify-center relative mb-4">
+            <div className="absolute -left-2 -bottom-1 w-2 h-2 border-l-2 border-b-2 border-[#10b981]"></div>
+            <div className="absolute -right-2 -top-1 w-2 h-2 border-r-2 border-t-2 border-[#10b981]"></div>
+            <h3 className="text-[#8c8273] font-bold tracking-widest uppercase text-xs px-2">SEAMLESS ACROSS DEVICES</h3>
+          </div>
           <h2 className="text-3xl md:text-5xl font-bold text-[#111827] tracking-tight">
             Work from anywhere, stay in sync
           </h2>

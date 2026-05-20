@@ -35,9 +35,13 @@ export function TestimonialsSection() {
       <div className="container mx-auto px-6 mb-14">
         <div className="text-center max-w-4xl mx-auto flex flex-col items-center">
           <div className="flex flex-col items-center">
-            <h3 className="text-[#8c8273] font-bold tracking-widest uppercase text-xs mb-6">
-              JMD | Nest
-            </h3>
+            <div className="inline-flex items-center justify-center relative mb-6">
+              <div className="absolute -left-2 -bottom-1 w-2 h-2 border-l-[2px] border-b-[2px] border-[#10b981]"></div>
+              <div className="absolute -right-2 -top-1 w-2 h-2 border-r-[2px] border-t-[2px] border-[#10b981]"></div>
+              <h3 className="text-[#8c8273] font-bold tracking-widest uppercase text-xs px-2">
+                JMD | Nest
+              </h3>
+            </div>
             <h2 className="text-4xl md:text-5xl font-bold text-[#111827] tracking-tight mb-12 leading-[1.1] text-center max-w-2xl mx-auto">
               "JMD | Nest is by far the best<br />PG management tool I have ever used"
             </h2>

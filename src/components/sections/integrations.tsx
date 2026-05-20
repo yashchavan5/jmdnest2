@@ -47,14 +47,18 @@ export function IntegrationsSection() {
       <div className="container mx-auto px-6 max-w-5xl">
         
         <div className="text-center mb-16">
-          <motion.h3 
+          <motion.div 
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-[#8c8273] font-bold tracking-widest uppercase text-xs mb-4"
+            className="inline-flex items-center justify-center relative mb-4"
           >
-            FEATURES
-          </motion.h3>
+            <div className="absolute -left-2 -bottom-1 w-2 h-2 border-l-2 border-b-2 border-[#10b981]"></div>
+            <div className="absolute -right-2 -top-1 w-2 h-2 border-r-2 border-t-2 border-[#10b981]"></div>
+            <h3 className="text-[#8c8273] font-bold tracking-widest uppercase text-xs px-2">
+              FEATURES
+            </h3>
+          </motion.div>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

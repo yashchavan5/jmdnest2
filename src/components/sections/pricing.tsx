@@ -11,6 +11,11 @@ export function PricingSection() {
     <section id="pricing" className="py-10 md:py-16 bg-[#eff3f8]">
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="text-center mb-10">
+          <div className="inline-flex items-center justify-center relative mb-4 lg:mb-6">
+            <div className="absolute -left-2 -bottom-1 w-2 h-2 border-l-2 border-b-2 border-[#10b981]"></div>
+            <div className="absolute -right-2 -top-1 w-2 h-2 border-r-2 border-t-2 border-[#10b981]"></div>
+            <h3 className="text-[#8c8273] font-bold tracking-widest uppercase text-xs px-2">PRICING PLANS</h3>
+          </div>
           <h2 className="text-4xl md:text-5xl font-bold text-[#111827] tracking-tight leading-[1.1]">
             Simple plans<br />for every PG size
           </h2>
