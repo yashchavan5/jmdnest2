@@ -142,9 +142,8 @@ export function PricingSection() {
           <div className="bg-[#111827] text-white rounded-[2rem] p-8 flex flex-col h-full hover:shadow-xl transition-shadow border border-[#1f2937]">
             <h3 className="text-[17px] font-bold text-gray-300 mb-2">Enterprise</h3>
             <div className="flex flex-col mb-4 h-[70px] justify-center">
-              <span className="text-sm text-gray-400 mb-1">Starting from</span>
               <div className="text-4xl lg:text-[2.5rem] font-bold text-white flex items-baseline gap-1">
-                {billing === "Annually" ? "₹20,496" : "₹2,080"}<span className="text-[1.25rem] font-medium text-gray-400">/{billing === "Annually" ? "yr" : "mo"} <span className="text-xs font-normal text-gray-400">+ GST</span></span>
+                Custom
               </div>
             </div>
             <p className="text-gray-400 mb-6 text-[13px] font-medium h-[40px]">Built for large PG networks</p>
