@@ -11,10 +11,15 @@ export function FloatingContact() {
         className="w-12 h-12 md:w-14 md:h-14 bg-white hover:bg-gray-50 rounded-full border border-gray-200 flex items-center justify-center shadow-lg transition-transform hover:-translate-y-1"
         aria-label="Book a meeting on Calendly"
       >
-        <svg className="w-6 h-6 md:w-7 md:h-7" viewBox="0 0 24 24" fill="#111827" xmlns="http://www.w3.org/2000/svg">
-          <path d="M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h7a8 8 0 0 1 11-10.4V7a3 3 0 0 0-3-3zM5 6h14a1 1 0 0 1 1 1v1H4V7a1 1 0 0 1 1-1zm3 6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zm0 6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zm6-6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1z" />
-          <circle cx="18" cy="18" r="5" fill="#111827" />
-          <path d="M18 15v3.5l2 2" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <svg className="w-6 h-6 md:w-7 md:h-7" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="16" cy="16" r="16" fill="black" />
+          <rect x="7" y="10" width="18" height="15" rx="2" stroke="white" strokeWidth="2" />
+          <path d="M7 15h18" stroke="white" strokeWidth="2" />
+          <path d="M11 7v5M21 7v5" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
+          <path d="M11.5 15v10M16 15v10M20.5 15v10" stroke="white" strokeWidth="1.5" />
+          <path d="M7 18.3h18M7 21.6h18" stroke="white" strokeWidth="1.5" />
+          <circle cx="23" cy="23" r="7" fill="black" stroke="white" strokeWidth="2" />
+          <path d="M23 19.5v3.5l2.5 2.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </a>
 

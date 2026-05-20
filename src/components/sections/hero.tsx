@@ -71,9 +71,15 @@ export function HeroSection() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <svg className="w-5 h-5 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h7.1a7.9 7.9 0 0 1 11.9-8.8V7a3 3 0 0 0-3-3zM5 6h14a1 1 0 0 1 1 1v1H4V7a1 1 0 0 1 1-1zm3 6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zm0 6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zm6-6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1z" />
-                <path d="M18 13a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm.5 2.5v2.3l1.8 1.8-.7.7-2.1-2.1V15.5h1z" />
+              <svg className="w-5 h-5 flex-shrink-0" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="16" fill="black" />
+                <rect x="7" y="10" width="18" height="15" rx="2" stroke="white" strokeWidth="2" />
+                <path d="M7 15h18" stroke="white" strokeWidth="2" />
+                <path d="M11 7v5M21 7v5" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
+                <path d="M11.5 15v10M16 15v10M20.5 15v10" stroke="white" strokeWidth="1.5" />
+                <path d="M7 18.3h18M7 21.6h18" stroke="white" strokeWidth="1.5" />
+                <circle cx="23" cy="23" r="7" fill="black" stroke="white" strokeWidth="2" />
+                <path d="M23 19.5v3.5l2.5 2.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               Get a Free Demo
             </Link>
