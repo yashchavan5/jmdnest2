@@ -145,6 +145,7 @@ export function PricingSection() {
               <div className="text-4xl lg:text-[2.5rem] font-bold text-white flex items-baseline gap-1">
                 Custom
               </div>
+              <span className="text-xs text-transparent font-medium mt-1 pointer-events-none select-none">Placeholder</span>
             </div>
             <p className="text-gray-400 mb-6 text-[13px] font-medium h-[40px]">Built for large PG networks</p>
             <div className="bg-[#374151] text-gray-200 text-[14px] font-extrabold tracking-wide px-4 py-2.5 rounded-lg block mb-6 border border-gray-600 text-center w-full uppercase">Manage 4+ Properties</div>

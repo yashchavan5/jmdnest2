@@ -17,18 +17,8 @@ export function Footer() {
             href="https://calendly.com/jmdsolutions"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 bg-[#1a1818] hover:bg-black text-white text-[15px] font-bold px-8 py-3.5 rounded-full transition-colors"
+            className="inline-block bg-[#1a1818] hover:bg-black text-white text-[15px] font-bold px-8 py-3.5 rounded-full transition-colors"
           >
-            <svg className="w-5 h-5 flex-shrink-0" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="16" cy="16" r="16" fill="black" />
-              <rect x="7" y="10" width="18" height="15" rx="2" stroke="white" strokeWidth="2" />
-              <path d="M7 15h18" stroke="white" strokeWidth="2" />
-              <path d="M11 7v5M21 7v5" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
-              <path d="M11.5 15v10M16 15v10M20.5 15v10" stroke="white" strokeWidth="1.5" />
-              <path d="M7 18.3h18M7 21.6h18" stroke="white" strokeWidth="1.5" />
-              <circle cx="23" cy="23" r="7" fill="black" stroke="white" strokeWidth="2" />
-              <path d="M23 19.5v3.5l2.5 2.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
             Book Demo
           </Link>
         </div>
