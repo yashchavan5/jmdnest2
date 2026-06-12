@@ -36,8 +36,8 @@ export function TestimonialsSection() {
         <div className="text-center max-w-4xl mx-auto flex flex-col items-center">
           <div className="flex flex-col items-center">
             <div className="inline-flex items-center justify-center relative mb-6">
-              <div className="absolute -left-2 -bottom-1 w-2 h-2 border-l-[2px] border-b-[2px] border-[#10b981]"></div>
-              <div className="absolute -right-2 -top-1 w-2 h-2 border-r-[2px] border-t-[2px] border-[#10b981]"></div>
+              <div className="absolute -left-2 -bottom-1 w-2 h-2 border-l-[2px] border-b-[2px] border-[#5c4033]"></div>
+              <div className="absolute -right-2 -top-1 w-2 h-2 border-r-[2px] border-t-[2px] border-[#5c4033]"></div>
               <h3 className="text-[#8c8273] font-bold tracking-widest uppercase text-xs px-2">
                 JMD | Nest
               </h3>

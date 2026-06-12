@@ -44,7 +44,7 @@ export function Navbar() {
             <a href="#features" className={`text-[15px] font-medium hover:opacity-70 transition-opacity ${isScrolled ? "text-[#111827]" : "text-white"}`}>Features</a>
             <a href="#benefits" className={`text-[15px] font-medium hover:opacity-70 transition-opacity ${isScrolled ? "text-[#111827]" : "text-white"}`}>Benefits</a>
             <a href="#pricing" className={`text-[15px] font-medium hover:opacity-70 transition-opacity ${isScrolled ? "text-[#111827]" : "text-white"}`}>Pricing</a>
-            <a href="/blog" className={`text-[15px] font-medium hover:opacity-70 transition-opacity ${isScrolled ? "text-[#111827]" : "text-white"}`}>Blog</a>
+            {/* <a href="/blog" className={`text-[15px] font-medium hover:opacity-70 transition-opacity ${isScrolled ? "text-[#111827]" : "text-white"}`}>Blog</a> */}
             <a href="https://api.whatsapp.com/send/?phone=919209552809&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className={`text-[15px] font-medium hover:opacity-70 transition-opacity ${isScrolled ? "text-[#111827]" : "text-white"}`}>Contact Us</a>
           </motion.nav>
 
@@ -79,7 +79,7 @@ export function Navbar() {
               <a href="#features" onClick={() => setIsOpen(false)} className="text-[17px] font-medium text-[#111827]">Features</a>
               <a href="#benefits" onClick={() => setIsOpen(false)} className="text-[17px] font-medium text-[#111827]">Benefits</a>
               <a href="#pricing" onClick={() => setIsOpen(false)} className="text-[17px] font-medium text-[#111827]">Pricing</a>
-              <a href="/blog" onClick={() => setIsOpen(false)} className="text-[17px] font-medium text-[#111827]">Blog</a>
+              {/* <a href="/blog" onClick={() => setIsOpen(false)} className="text-[17px] font-medium text-[#111827]">Blog</a> */}
               <a href="https://api.whatsapp.com/send/?phone=919209552809&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)} className="text-[17px] font-medium text-[#111827]">Contact Us</a>
             </nav>
 

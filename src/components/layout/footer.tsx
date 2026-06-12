@@ -31,7 +31,7 @@ export function Footer() {
             <div>
               <a href="/" className="flex items-center gap-2 mb-4 text-[#111827] font-bold text-xl tracking-tight">
                 <img src="/jmdnest-logo-final.png" alt="JmdNest" className="h-12 w-auto object-contain drop-shadow-[0_2px_8px_rgba(0,0,0,0.1)]" />
-                JMD | Nest
+                JMD Solutions & Beyond
               </a>
               <p className="text-[#4b5563] mb-8 text-[15px]">
                 Premium PG accommodation for modern living.
@@ -73,7 +73,7 @@ export function Footer() {
                   <li><a href="/" className="text-[#4b5563] hover:text-[#111827] transition-colors text-[14px] font-medium">Home</a></li>
                   <li><a href="#features" className="text-[#4b5563] hover:text-[#111827] transition-colors text-[14px] font-medium">Features</a></li>
                   <li><a href="#pricing" className="text-[#4b5563] hover:text-[#111827] transition-colors text-[14px] font-medium">Pricing</a></li>
-                  <li><a href="/blog" className="text-[#4b5563] hover:text-[#111827] transition-colors text-[14px] font-medium">Blog</a></li>
+                  {/* <li><a href="/blog" className="text-[#4b5563] hover:text-[#111827] transition-colors text-[14px] font-medium">Blog</a></li> */}
                 </ul>
               </div>
 
@@ -90,7 +90,7 @@ export function Footer() {
 
           <div className="pt-8 border-t border-[#d1dce8]">
             <p className="text-[#6b7280] text-sm">
-              © 2026 JMD | Nest. All rights reserved.
+              © 2026 JMD Solutions & Beyond. All rights reserved.
             </p>
           </div>
         </div>

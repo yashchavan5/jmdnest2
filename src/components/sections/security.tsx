@@ -5,7 +5,17 @@ export function SecuritySection() {
   return (
     <section className="pt-10 md:pt-16 pb-6 bg-[#f9f8f6]">
       <div className="container mx-auto px-6 max-w-5xl">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 flex flex-col items-center">
+          <motion.div 
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="inline-flex items-center justify-center relative mb-4 lg:mb-6"
+          >
+            <div className="absolute -left-2 -bottom-1 w-2 h-2 border-l-2 border-b-2 border-[#5c4033]"></div>
+            <div className="absolute -right-2 -top-1 w-2 h-2 border-r-2 border-t-2 border-[#5c4033]"></div>
+            <h3 className="text-[#8c8273] font-bold tracking-widest uppercase text-xs px-2">FEATURES</h3>
+          </motion.div>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

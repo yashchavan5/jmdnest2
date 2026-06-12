@@ -57,8 +57,8 @@ export function FeaturesSection() {
           {/* Left Sticky Part - Pinned during scroll only on desktop */}
           <div className="w-full lg:w-[45%] lg:sticky lg:top-0 h-auto lg:h-screen flex flex-col items-center lg:items-start lg:justify-start text-center lg:text-left pt-6 pb-12 lg:pt-24 lg:pb-0 z-30 bg-transparent transition-all">
             <div className="inline-flex items-center justify-center relative mb-4 lg:mb-8">
-              <div className="absolute -left-2 -bottom-1 w-2 h-2 border-l-2 border-b-2 border-[#10b981]"></div>
-              <div className="absolute -right-2 -top-1 w-2 h-2 border-r-2 border-t-2 border-[#10b981]"></div>
+              <div className="absolute -left-2 -bottom-1 w-2 h-2 border-l-2 border-b-2 border-[#5c4033]"></div>
+              <div className="absolute -right-2 -top-1 w-2 h-2 border-r-2 border-t-2 border-[#5c4033]"></div>
               <span className="text-[#111827] text-[13px] lg:text-[15px] font-medium px-2">Our process</span>
             </div>
             

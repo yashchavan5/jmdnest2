@@ -53,8 +53,8 @@ export function IntegrationsSection() {
             viewport={{ once: true }}
             className="inline-flex items-center justify-center relative mb-4"
           >
-            <div className="absolute -left-2 -bottom-1 w-2 h-2 border-l-2 border-b-2 border-[#10b981]"></div>
-            <div className="absolute -right-2 -top-1 w-2 h-2 border-r-2 border-t-2 border-[#10b981]"></div>
+            <div className="absolute -left-2 -bottom-1 w-2 h-2 border-l-2 border-b-2 border-[#5c4033]"></div>
+            <div className="absolute -right-2 -top-1 w-2 h-2 border-r-2 border-t-2 border-[#5c4033]"></div>
             <h3 className="text-[#8c8273] font-bold tracking-widest uppercase text-xs px-2">
               FEATURES
             </h3>
