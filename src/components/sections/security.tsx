@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 
 export function SecuritySection() {
   return (
-    <section id="features" className="pt-10 md:pt-16 pb-6 bg-[#f9f8f6]">
+    <section id="features" className="pt-10 md:pt-16 pb-6 bg-[#f9f8f6] scroll-mt-24">
       <div className="container mx-auto px-6 max-w-5xl">
         <div className="text-center mb-16 flex flex-col items-center">
           <motion.div 
