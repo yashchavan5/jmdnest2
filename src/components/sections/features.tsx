@@ -49,7 +49,7 @@ export function FeaturesSection() {
   });
 
   return (
-    <section id="features" className="bg-[#f9f9f9] relative pt-8 lg:pt-10" ref={containerRef}>
+    <section className="bg-[#f9f9f9] relative pt-8 lg:pt-10" ref={containerRef}>
       <div className="container mx-auto px-6 max-w-7xl">
         
         <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-24 relative">
